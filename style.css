@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.title {
+  padding: 50px 25px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+img {
+  display: block;
+}
+
+@media (min-width: 960px) { /*960px viewport and above*/
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-img {
+    width:480px;
+  }
+}
+
+@media (min-width: 1280px) { /*1280px viewport and above*/
+  .header-img {
+    width:640px;
+  }
+}
+
+@media (min-width: 1600px) { /*1600px viewport and above*/
+  .header-img{
+    width:800px;
+  }
+}  
+
+@media (max-width: 959px) { /*959px viewport and below*/
+  .header-img{
+    width:960px;
+  }
+}
+
+@media (max-width: 720px) { /*720px viewport and below*/
+  .header-img{
+    width:720px;
+  }
+}
+
+@media (max-width: 480px) { /*480px viewport and below*/
+  .header-img{
+    width:480px;
+  }
+}
+
+@media (max-width: 320px) { /*320px viewport and below*/
+  .header-img{
+    width:320px;
+  }
+}
